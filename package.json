@@ -1,0 +1,13 @@
+{
+  "name": "VisitBasic",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-autoprefixer": "~0.2.20130806"
+  },
+  "dependencies": {
+    "grunt-sass": "^2.0.0",
+    "node-sass": "^4.5.3"
+  }
+}

@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0;
+  background: #eee;
+  min-height: 200vh;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8; }
+
+::-webkit-scrollbar {
+  background: black;
+  width: 5px; }
+
+::-webkit-scrollbar-thumb {
+  background: white; }
+
+.container {
+  max-width: 94rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem; }
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  margin-top: 1.5rem; }
+  nav .container {
+    max-width: 70rem;
+    display: flex;
+    justify-content: space-between; }
+    nav .container a {
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 0.75rem 1.3rem;
+      background: black;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      border-radius: 0.25rem;
+      color: white; }
+      nav .container a:nth-child(1) {
+        animation: fadeInDown 350ms ease 3.5s both; }
+      nav .container a:nth-child(2) {
+        animation: fadeInDown 350ms ease 3.7s both; }
+      nav .container a:nth-child(3) {
+        animation: fadeInDown 350ms ease 3.9s both; }
+      nav .container a:nth-child(4) {
+        animation: fadeInDown 350ms ease 4.1s both; }
+
+header {
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #fff 0%, #d6d6d6 100%);
+  position: relative; }
+  header #parallax {
+    display: block; }
+    header #parallax div {
+      height: 100vh;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      width: 100%;
+      position: absolute; }
+      header #parallax div.parallax {
+        position: fixed; }
+    header #parallax #layer-0 {
+      background-image: url("images/0.svg"); }
+    header #parallax #layer-1 {
+      background-image: url("images/1.svg"); }
+    header #parallax #layer-2 {
+      background-image: url("images/2.svg"); }
+    header #parallax #layer-3 {
+      background-image: url("images/3.svg"); }
+    header #parallax #layer-4 {
+      background-image: url("images/4.svg"); }
+    header #parallax #layer-5 {
+      background-image: url("images/5.svg"); }
+    header #parallax #layer-6 {
+      background-image: url("images/6.svg"); }
+    header #parallax #layer-scrim {
+      opacity: 0; }
+  header #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2; }
+  header #logo {
+    height: 500px;
+    width: 318px;
+    position: absolute; }
+    header #logo svg {
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box; }
+      header #logo svg #frame {
+        stroke-miterlimit: 1;
+        stroke-linecap: butt;
+        stroke-dasharray: 1156;
+        stroke-dashoffset: 1156;
+        stroke-width: 3;
+        stroke: white;
+        fill: none;
+        animation: fadeIn 600ms ease 1000ms both, frame 600ms linear 1s forwards; }
+      header #logo svg #mountain {
+        fill-opacity: 0;
+        fill: black;
+        stroke-miterlimit: 1;
+        stroke-linecap: butt;
+        stroke-dasharray: 1038;
+        stroke-dashoffset: 1038;
+        stroke-width: 2;
+        stroke: black;
+        animation: fadeIn 600ms ease 1.6s both, mountain 600ms linear 1.6s forwards, filler 300ms linear 2.2s both; }
+
+@keyframes frame {
+  from {
+    stroke-dashoffset: 1156; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes mountain {
+  from {
+    stroke-dashoffset: 1037; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes filler {
+  0% {
+    fill-opacity: 0; }
+  to {
+    fill-opacity: 1; } }
+      header #logo svg #this path:nth-child(1) {
+        animation: filler 300ms linear 2.5s both; }
+      header #logo svg #this path:nth-child(2) {
+        animation: filler 300ms linear 2.7s both; }
+      header #logo svg #this path:nth-child(3) {
+        animation: filler 300ms linear 2.9s both; }
+      header #logo svg #this path:nth-child(4) {
+        animation: filler 300ms linear 3.1s both; }
+      header #logo svg #accommodation {
+        animation: fadeInUp 600ms ease 3600ms both; }
+        header #logo svg #accommodation path:nth-child(1) {
+          animation: filler 300ms linear 3.3s both; }
+        header #logo svg #accommodation path:nth-child(2) {
+          animation: filler 300ms linear 3.5s both; }
+        header #logo svg #accommodation path:nth-child(3) {
+          animation: filler 300ms linear 3.7s both; }
+        header #logo svg #accommodation path:nth-child(4) {
+          animation: filler 300ms linear 3.9s both; }
+        header #logo svg #accommodation path:nth-child(5) {
+          animation: filler 300ms linear 4.1s both; }
+  header .box {
+    display: block;
+    position: absolute;
+    filter: blur(50px);
+    opacity: 0.4;
+    border-radius: 50%; }
+    header .box.one {
+      height: 300px;
+      width: 300px;
+      background: white;
+      right: 10%; }
+    header .box.two {
+      height: 300px;
+      width: 300px;
+      background: #111; }
+
+main {
+  background: white;
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+  padding: 5rem; }
